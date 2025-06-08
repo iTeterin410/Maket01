@@ -1,0 +1,184 @@
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 500;
+	src:url('fonts/TTLakes/TTLakes-Medium.woff');
+}
+
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 700;
+	src:url('fonts/TTLakes/TTLakes-Bold.woff');
+}
+
+
+@font-face{
+	font-family: TT Lakes;
+	font-weight: 400;
+	src:url('fonts/TTLakes/TTLakes-Regular.woff');
+}
+body, p, ul, li, button, h1 {
+	background-color:#FFFFFF;
+	list-style-type: none;
+	font-family: TT Lakes;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	text-decoration: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+ body{
+    margin:0;
+    padding: 0;
+} 
+
+.left-menu{
+    transform: translate(0px, 0px);
+    box-sizing: border-box;
+    overflow-x: hidden;
+
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 1024px;
+    width: 320px;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+}
+/*Розовая кнопка*/
+.round-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.round-button--ping{
+  background-color: #FF3E79;
+  border: none;
+}
+.round-button--icburger{
+  background-image: url(img/icons/header/icburger.svg);
+}
+.round-button--icsearch{
+  background-image: url(img/icons/header/icsearch.svg);
+}
+.round-button--call{
+  background-image: url(img/icons/header/call.svg);
+}
+.round-button--chat{
+  background-image: url(img/icons/header/chat.svg);
+}
+.round-button--profile {
+	background-image: url(img/icons/header/profile.svg);
+}
+.round-button--repair {
+	background-image: url(img/icons/header/repair.svg);
+}
+.round-button--checkstatus {
+	background-image: url(img/icons/header/checkstatus.svg);
+}
+.round-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.header{
+    margin: 0;
+    padding-top: 18px;
+    padding-right: 24px;
+    padding-bottom: 0;
+    padding-left: 24px;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+
+
+   
+}
+.header__left-panel{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.header__right-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu{
+    list-style-type:none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top:50px;
+    padding-left: 24px;
+    padding-right: auto;
+    gap: 32px;
+}
+.menu__link {
+
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+.menu__link:hover {
+  opacity: 0.6;
+}
+.menu__link::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background: #41F6D7;
+    border-radius: 30%;
+    opacity: 0;
+    position: absolute;
+    left: -5px;
+    width: 10px;
+    height: 30px;
+}
+.menu__link:hover::before{
+    opacity: 1;
+}
+.footer{
+    margin-bottom: 16px;
+    margin-top: auto;
+    margin-left: 24px;
+}
+.footer__left-panel{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.footer__phone-number{
+    font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.6px;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+.footer__lang{
+    margin-bottom: 32px;
+}
+.footer__lang-button{
+    margin-right: 7px;
+}
+.footer__lang-button--hover:hover{
+    color: #7E7E82;
+    
+}
